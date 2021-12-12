@@ -22,7 +22,7 @@ timeToWait = 1 # time to wait before cecking for current time (every second)
 timeToWaitSunriseSunset = 10 # 120 seconds or 2 minutes
 
 def get_weather(location):
-    api_key = '674113184e46c62a71940e4a543e4ea7'
+    api_key = ""; # Removing the secret from here. 
     url = "https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid={}".format(location, api_key)
     r = requests.get(url)
     return r.json()
